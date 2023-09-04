@@ -3,6 +3,7 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    margin: auto;
 }
 a {
     color: #3971ed;
@@ -10,4 +11,5 @@ a {
 }
 ul {
     list-style-type: none;
+    padding: 0;
 }

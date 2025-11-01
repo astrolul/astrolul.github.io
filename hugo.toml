@@ -1,7 +1,7 @@
 # Basic config
 baseURL = "https://astrolul.xyz"
 theme = "hugo-bearcub"
-copyright = "John Doe (CC BY 4.0)"
+copyright = "astrolul (CC BY 4.0)"
 defaultContentLanguage = "en"
 
 # Generate a nice robots.txt for SEO

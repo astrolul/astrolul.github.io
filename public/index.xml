@@ -12,6 +12,26 @@
     <lastBuildDate>Sat, 01 Nov 2025 21:24:40 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Rices</title>
+      <link>http://localhost:1313/rices/</link>
+      <pubDate>Sat, 01 Nov 2025 23:33:57 +0000</pubDate><author>me@example.com (John Doe)</author>
+      <guid>http://localhost:1313/rices/</guid>
+      <description>&lt;p&gt;Here is an archive of all of my old Linux TWM Rices :)&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/rice-archive-01.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-02.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-03.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-04.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-05.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-06.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-07.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-08.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-09.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-10.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Here is an archive of all of my old Linux TWM Rices :)</p>
+<p><img src="/rice-archive-01.png" alt="">
+<img src="/rice-archive-02.png" alt="">
+<img src="/rice-archive-03.png" alt="">
+<img src="/rice-archive-04.png" alt="">
+<img src="/rice-archive-05.png" alt="">
+<img src="/rice-archive-06.png" alt="">
+<img src="/rice-archive-07.png" alt="">
+<img src="/rice-archive-08.png" alt="">
+<img src="/rice-archive-09.png" alt="">
+<img src="/rice-archive-10.png" alt="">
+<img src="/rice-archive-11.png" alt=""></p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Contact</title>
       <link>http://localhost:1313/contact/</link>
       <pubDate>Sat, 01 Nov 2025 23:03:57 +0000</pubDate><author>me@example.com (John Doe)</author>

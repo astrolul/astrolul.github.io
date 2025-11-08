@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" />
+<title>Using GNU Stow for managing your dotfiles | astrolul&#39;s website ☕</title>
+<meta name="title" content="Using GNU Stow for managing your dotfiles" />
+<meta name="description" content="A few years back, I discovered a program called GNU Stow through a video on Wolfgang&rsquo;s Channel which is as defined by the man page:
+
+&ldquo;a symlink farm manager which takes distinct packages of software and/or data located in separate directories on the filesystem, and makes them appear to be installed in the same place.&rdquo;
+I found that it was very useful for managing your dotfiles and various configurations in a clean manner instead of having to manually symlink everything together, and today I will guide you on how to use it so you can worry about configuring neovim instead of worrying about if your dotfiles are symlinked or not ;)" />
+<meta name="author" content="" />
+<meta name="keywords" content="" />
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:title" content="Using GNU Stow for managing your dotfiles" />
+<meta property="og:description" content="A few years back, I discovered a program called GNU Stow through a video on Wolfgang&rsquo;s Channel which is as defined by the man page:
+
+&ldquo;a symlink farm manager which takes distinct packages of software and/or data located in separate directories on the filesystem, and makes them appear to be installed in the same place.&rdquo;
+I found that it was very useful for managing your dotfiles and various configurations in a clean manner instead of having to manually symlink everything together, and today I will guide you on how to use it so you can worry about configuring neovim instead of worrying about if your dotfiles are symlinked or not ;)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/blog/stow/" />
+
+<meta property="og:image" content="http://localhost:1313/images/social_card_bg_hu_8606b792eeb457ac.webp"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2025-11-08T01:44:31+00:00" />
+<meta property="article:modified_time" content="2025-11-08T01:44:31+00:00" /><meta property="og:site_name" content="Bear Cub" />
+<meta property="fb:admins" content="0000000000" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/images/social_card_bg_hu_8606b792eeb457ac.webp"/>
+<meta name="twitter:title" content="Using GNU Stow for managing your dotfiles"/>
+<meta name="twitter:description" content="A few years back, I discovered a program called GNU Stow through a video on Wolfgang&rsquo;s Channel which is as defined by the man page:
+
+&ldquo;a symlink farm manager which takes distinct packages of software and/or data located in separate directories on the filesystem, and makes them appear to be installed in the same place.&rdquo;
+I found that it was very useful for managing your dotfiles and various configurations in a clean manner instead of having to manually symlink everything together, and today I will guide you on how to use it so you can worry about configuring neovim instead of worrying about if your dotfiles are symlinked or not ;)"/>
+<meta name="twitter:site" content="@example"/>
+
+
+
+<meta itemprop="name" content="Using GNU Stow for managing your dotfiles">
+<meta itemprop="description" content="A few years back, I discovered a program called GNU Stow through a video on Wolfgang&rsquo;s Channel which is as defined by the man page:
+
+&ldquo;a symlink farm manager which takes distinct packages of software and/or data located in separate directories on the filesystem, and makes them appear to be installed in the same place.&rdquo;
+I found that it was very useful for managing your dotfiles and various configurations in a clean manner instead of having to manually symlink everything together, and today I will guide you on how to use it so you can worry about configuring neovim instead of worrying about if your dotfiles are symlinked or not ;)"><meta itemprop="datePublished" content="2025-11-08T01:44:31+00:00" />
+<meta itemprop="dateModified" content="2025-11-08T01:44:31+00:00" />
+<meta itemprop="wordCount" content="324">
+
+<meta itemprop="image" content="http://localhost:1313/images/social_card_bg_hu_8606b792eeb457ac.webp"/>
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  
+  <link href="/original.min.css" rel="stylesheet">
+
+  
+    
+    <link href="/syntax.min.css" rel="stylesheet">
+  
+
+  
+
+  
+</head>
+
+<body>
+  <header><a class="skip-link" href="#main-content">Skip to main content</a>
+
+<a href="/" class="title"><h1>astrolul&#39;s website ☕</h1></a>
+<nav>
+  <a href="/">About</a>
+
+  <a href="/blog/">Blog</a>
+
+  <a href="/contact/">Contact</a>
+
+  <a href="/rices/">Rices</a>
+
+<a href='http://localhost:1313/index.xml'>RSS</a>
+
+
+
+
+
+
+
+</nav>
+</header>
+  <main id="main-content">
+
+<h1>Using GNU Stow for managing your dotfiles</h1>
+<p class="byline">
+  <time datetime='2025-11-08' pubdate>
+    2025-11-08
+  </time>
+  
+</p>
+
+<content>
+  <p>A few years back, I discovered a program called GNU Stow through a video on Wolfgang&rsquo;s Channel which is as defined by the man page:</p>
+<blockquote>
+<p><em>&ldquo;a symlink farm manager which takes distinct packages of software and/or data located in separate directories on the filesystem, and makes them appear to be installed in the same place.&rdquo;</em></p></blockquote>
+<p>I found that it was very useful for managing your dotfiles and various configurations in a clean manner instead of having to manually symlink everything together, and today I will guide you on how to use it so you can worry about configuring neovim instead of worrying about if your dotfiles are symlinked or not ;)</p>
+<p>To begin, install stow using your distributions package manager</p>
+
+
+
+
+
+<pre tabindex="0"><code>sudo pacman -S stow</code></pre><p>Then create a dotfiles folder in your home directory and move all of your existing configurations there with a structure as follows</p>
+
+
+
+
+
+<pre tabindex="0"><code>.
+├── dunst
+│   └── .config
+│       └── dunst
+│           └── dunstrc
+├── fastfetch
+│   └── .config
+│       └── fastfetch
+│           └── config.jsonc
+├── ok.txt
+├── picom
+│   └── .config
+│       └── picom
+│           ├── picom.conf
+│           └── picom.conf.save
+├── rofi
+│   └── .config
+│       └── rofi
+│           ├── config
+│           └── themes
+│               └── merah.rasi
+├── tmux
+│   ├── .tmux
+│   │   └── plugins
+│   │       ├── tmux-sensible
+│   │       └── tpm
+│   └── .tmux.conf
+├── xorg
+│   ├── .xinitrc
+│   ├── .Xprofile
+│   └── .Xresources
+└── zsh
+    └── .zshrc</code></pre><p>Once done, make sure all of your configs are removed from the .config directory in your home directory and then move into your dotfiles folder and run the following command to deploy your dotfiles:</p>
+
+
+
+
+
+<pre tabindex="0"><code>stow *</code></pre><p>Or if you wish to only deploy certain specified folders run:</p>
+
+
+
+
+
+<pre tabindex="0"><code>stow rofi picom xorg fastfetch</code></pre><p>And that&rsquo;s it, its as simple as that, now all of your dotfiles will automatically be symlinked and you can now initalise a git repo inside of the newly created dotfiles folder for easy version control, happy ricing :)</p>
+
+</content>
+<p>
+  
+</p>
+
+
+  <p>
+    <a href='mailto:me@example.com?subject=Reply%20to%20"Using%20GNU%20Stow%20for%20managing%20your%20dotfiles"'>
+      Reply to this post by email ↪
+    </a>
+  </p>
+
+
+
+  </main>
+  <footer><small>
+  astrolul (CC BY 4.0) | Made with <a href="https://github.com/clente/hugo-bearcub">Bear Cub</a>
+</small></footer>
+
+    
+</body>
+
+</html>

@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>astrolul&#39;s website ☕</title>
+    <title>About on astrolul&#39;s website ☕</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on astrolul&#39;s website ☕</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in About on astrolul&#39;s website ☕</description>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <managingEditor>me@example.com (John Doe)</managingEditor>
     <webMaster>me@example.com (John Doe)</webMaster>
     <copyright>astrolul (CC BY 4.0)</copyright>
-    <lastBuildDate>Sat, 01 Nov 2025 21:24:40 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Nov 2025 02:54:01 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>http://localhost:1313/blog/</link>
+      <pubDate>Sat, 08 Nov 2025 02:54:01 +0000</pubDate><author>me@example.com (John Doe)</author>
+      <guid>http://localhost:1313/blog/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;08/11/2025 - &lt;a href=&#34;http://localhost:1313/blog/stow/&#34;&gt;Using GNU Stow for managing your dotfiles&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Using GNU Stow for managing your dotfiles</title>
+      <link>http://localhost:1313/blog/stow/</link>
+      <pubDate>Sat, 08 Nov 2025 01:44:31 +0000</pubDate><author>me@example.com (John Doe)</author>
+      <guid>http://localhost:1313/blog/stow/</guid>
+      <description>&lt;p&gt;A few years back, I discovered a program called GNU Stow through a video on Wolfgang&amp;rsquo;s Channel which is as defined by the man page:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;a symlink farm manager which takes distinct packages of software and/or data located in separate directories on the filesystem, and makes them appear to be installed in the same place.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;I found that it was very useful for managing your dotfiles and various configurations in a clean manner instead of having to manually symlink everything together, and today I will guide you on how to use it so you can worry about configuring neovim instead of worrying about if your dotfiles are symlinked or not ;)&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Rices</title>
       <link>http://localhost:1313/rices/</link>
       <pubDate>Sat, 01 Nov 2025 23:33:57 +0000</pubDate><author>me@example.com (John Doe)</author>
       <guid>http://localhost:1313/rices/</guid>
       <description>&lt;p&gt;Here is an archive of all of my old Linux TWM Rices :)&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/rice-archive-01.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-02.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-03.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-04.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-05.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-06.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-07.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-08.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-09.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-10.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/rice-archive-11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>Here is an archive of all of my old Linux TWM Rices :)</p>
-<p><img src="/rice-archive-01.png" alt="">
-<img src="/rice-archive-02.png" alt="">
-<img src="/rice-archive-03.png" alt="">
-<img src="/rice-archive-04.png" alt="">
-<img src="/rice-archive-05.png" alt="">
-<img src="/rice-archive-06.png" alt="">
-<img src="/rice-archive-07.png" alt="">
-<img src="/rice-archive-08.png" alt="">
-<img src="/rice-archive-09.png" alt="">
-<img src="/rice-archive-10.png" alt="">
-<img src="/rice-archive-11.png" alt=""></p>
-]]></content:encoded>
     </item>
     <item>
       <title>Contact</title>
@@ -37,13 +38,6 @@
       <pubDate>Sat, 01 Nov 2025 23:03:57 +0000</pubDate><author>me@example.com (John Doe)</author>
       <guid>http://localhost:1313/contact/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re looking to contact me about anything, I&amp;rsquo;m pretty active on irc usually but if that isnt your thing you can simply email me at the address below.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;IRC (irc.libera.chat): astrolul&lt;/li&gt;&#xA;&lt;li&gt;Discord: @astrolul (formerly astrolul#2756)&lt;/li&gt;&#xA;&lt;li&gt;Email: &lt;a href=&#34;mailto:d12rare@protonmail.com&#34;&gt;d12rare@protonmail.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-      <content:encoded><![CDATA[<p>If you&rsquo;re looking to contact me about anything, I&rsquo;m pretty active on irc usually but if that isnt your thing you can simply email me at the address below.</p>
-<ul>
-<li>IRC (irc.libera.chat): astrolul</li>
-<li>Discord: @astrolul (formerly astrolul#2756)</li>
-<li>Email: <a href="mailto:d12rare@protonmail.com">d12rare@protonmail.com</a></li>
-</ul>
-]]></content:encoded>
     </item>
   </channel>
 </rss>

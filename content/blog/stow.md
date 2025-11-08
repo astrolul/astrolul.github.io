@@ -18,7 +18,6 @@ sudo pacman -S stow
 
 Then create a dotfiles folder in your home directory and move all of your existing configurations there with a structure as follows
 ```
-.
 ├── dunst
 │   └── .config
 │       └── dunst
@@ -27,7 +26,6 @@ Then create a dotfiles folder in your home directory and move all of your existi
 │   └── .config
 │       └── fastfetch
 │           └── config.jsonc
-├── ok.txt
 ├── picom
 │   └── .config
 │       └── picom

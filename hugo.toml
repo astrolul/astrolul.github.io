@@ -52,11 +52,11 @@ enableRobotsTXT = true
 
   # This title is used as the site_name on the Hugo's internal opengraph
   # structured data template
-  title = "Bear Cub"
+  title = "astrolul's website ☕"
 
   # Dates are displayed following the format below. For more information about
   # formatting, see https://gohugo.io/functions/format/
-  dateFormat = "2006-01-02"
+  dateFormat = "02-01-2006"
 
   # If your blog is multilingual but you haven't translated a page, this theme
   # will create a disabled link. By setting `hideUntranslated` to true, you can
@@ -85,8 +85,8 @@ enableRobotsTXT = true
   # email is also added to the footer of each post. You can hide the "reply to"
   # link by using a `hideReply` param in front matter.
   [params.author]
-    name = "John Doe" # Your name as shown in the RSS feed metadata
-    email = "me@example.com" # Added to the footer so readers can reply to posts
+    name = "astrolul" # Your name as shown in the RSS feed metadata
+    email = "d12rare@protonmail.com" # Added to the footer so readers can reply to posts
 
   [caches]
     [caches.images]

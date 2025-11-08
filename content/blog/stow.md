@@ -10,7 +10,7 @@ A few years back, I discovered a program called GNU Stow through a video on Wolf
 
 I found that it was very useful for managing your dotfiles and various configurations in a clean manner instead of having to manually symlink everything together, and today I will guide you on how to use it so you can worry about configuring neovim instead of worrying about if your dotfiles are symlinked or not ;)
 
-To begin, install stow using your distributions package manager
+To begin, install stow using your distribution's package manager
 
 ```
 sudo pacman -S stow

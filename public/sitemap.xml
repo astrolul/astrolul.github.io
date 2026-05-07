@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2025-11-08T02:54:01+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/stow/</loc>
+    <loc>https://astrolul.xyz/blog/stow/</loc>
     <lastmod>2025-11-08T01:44:31+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rices/</loc>
+    <loc>https://astrolul.xyz/rices/</loc>
     <lastmod>2025-11-01T23:33:57+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://astrolul.xyz/contact/</loc>
     <lastmod>2025-11-01T23:03:57+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://astrolul.xyz/</loc>
     <lastmod>2025-11-01T21:24:40+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://astrolul.xyz/blog/</loc>
+    <lastmod>2025-11-08T01:44:31+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://astrolul.xyz/categories/</loc>
+  </url><url>
+    <loc>https://astrolul.xyz/tags/</loc>
   </url>
 </urlset>
